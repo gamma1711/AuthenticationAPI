@@ -31,7 +31,7 @@ Permite registrar usuarios, iniciar sesión y acceder a rutas protegidas mediant
 
 ## Instalación
 
-```bash
+```
 # Clonar el repositorio
 git clone <URL_DEL_REPOSITORIO>
 
@@ -40,12 +40,9 @@ cd authentication
 
 # Instalar dependencias
 npm install
+````
 Configuración de variables de entorno
 Crea un archivo .env en la raíz del proyecto:
-
-ini
-Copiar
-Editar
 PORT=5000
 MONGO_URI=<TU_URI_DE_MONGODB>
 JWT_SECRET=<TU_CLAVE_SECRETA>
