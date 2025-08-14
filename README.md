@@ -36,23 +36,23 @@ Permite registrar usuarios, iniciar sesión y acceder a rutas protegidas mediant
 git clone <URL_DEL_REPOSITORIO>
 
 # Entrar al proyecto
-cd authentication
+cd Authentication
 
 # Instalar dependencias
 npm install
 ````
 Configuración de variables de entorno
 Crea un archivo .env en la raíz del proyecto:
+```
 PORT=5000
 MONGO_URI=<TU_URI_DE_MONGODB>
 JWT_SECRET=<TU_CLAVE_SECRETA>
-Uso
-Ejecutar el servidor
-bash
-Copiar
-Editar
+```
+## Uso
+- Ejecutar el servidor
 npm run dev
-Probar la API con Postman
+- Probar la API con Postman
+```
 Registro de usuario
 Método: POST
 
@@ -70,6 +70,7 @@ Editar
   "email": "juan@example.com",
   "password": "123456"
 }
+```
 Login
 Método: POST
 
