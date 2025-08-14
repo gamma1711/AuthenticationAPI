@@ -50,7 +50,9 @@ JWT_SECRET=<TU_CLAVE_SECRETA>
 ```
 ## Uso
 - Ejecutar el servidor
+```
 npm run dev
+```
 - Probar la API con Postman
 ```
 Registro de usuario
@@ -61,17 +63,14 @@ URL: http://localhost:5000/api/auth/register
 Headers: Content-Type: application/json
 
 Body:
-
-json
-Copiar
-Editar
 {
   "name": "Juan Perez",
   "email": "juan@example.com",
   "password": "123456"
 }
 ```
-Login
+## Login
+```
 Método: POST
 
 URL: http://localhost:5000/api/auth/login
@@ -79,40 +78,30 @@ URL: http://localhost:5000/api/auth/login
 Headers: Content-Type: application/json
 
 Body:
-
-json
-Copiar
-Editar
 {
   "email": "juan@example.com",
   "password": "123456"
 }
 Respuesta: token JWT y datos del usuario.
-
-Ruta protegida /profile
+```
+## Ruta protegida /profile
+```
 Método: GET
 
 URL: http://localhost:5000/api/auth/profile
 
 Headers:
-
-makefile
-Copiar
-Editar
 Authorization: Bearer <TOKEN_OBTENIDO_DEL_LOGIN>
 Respuesta: datos del usuario (sin contraseña).
-
+```
 Notas de seguridad
-Las contraseñas se almacenan encriptadas con bcrypt.
+- Las contraseñas se almacenan encriptadas con bcrypt.
 
-Tokens JWT con expiración de 1 día.
+- Tokens JWT con expiración de 1 día.
 
-Rate limiting aplicado en la ruta de login.
+- Rate limiting aplicado en la ruta de login.
 
-Helmet y CORS configurados para mejorar la seguridad.
-
-Contribuciones
-Este proyecto es solo para fines educativos y de portafolio.
+- Helmet y CORS configurados para mejorar la seguridad.
 
 Autor
 Gamaliel Jarquin
